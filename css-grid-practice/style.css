@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#grid-container {
+    margin: 1vw;
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: repeat(autofit, minmax(20vw, 1fr));
+    grid-template-rows: repeat(3, minmax(31vh, 1fr));
+}
+
+/* Styling for the 5 divs */
+#grid-container > div {
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+#one {
+    background-color: red;
+    grid-column: 1 / 5;
+}
+
+#two {
+    background-color: blue;
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+#three {
+    background-color: green;
+    grid-column: 3 / 5;
+}
+
+#four {
+    background-color: purple;
+}
